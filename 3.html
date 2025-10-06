@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css";/>
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Varela+Round&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>CONTACT US</title>
+    <style>
+        h1,h4,th{
+            font-family: Zalando Sans Expanded;
+        }
+        p,tr{
+            font-family: Zalando Sans Expanded;
+        }
+        #cat{
+          width: 150px;
+        }
+        body{
+          background-color: #fffdfa;
+        }
+        .table, thead {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        overflow: hidden;
+        }
+        .nav-link, input{
+          font-family: Zalando Sans Expanded;
+          color: black;
+        }
+        a{
+          font-family: Zalando Sans Expanded;
+          text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <div class="container-fluid" style="background-color: #F5D2D2; border-color: black; border-style: solid; border-radius: 15px; border-width: 4px; box-shadow: 10px 8px;">
+            <a class="navbar-brand" href="index.html" style="font-family: Zalando Sans Expanded; font-size: 36px; font-weight: 500;">Dough-Re-Mi ♪♫♪</a>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav justify-content-center w-100">
+            <li class="nav-item">
+                <a class="nav-link" href="2.html">order now</a>
+            </li>
+                <a class="nav-link" href="index.html">home</a>
+            </li>
+                <a class="nav-link" href="3.html">contact us</a>
+            </li>
+        </ul>
+        <form class="d-flex">
+            <input class="form-control" type="text" placeholder="search..." style="font-size: 20px; border-radius: 17px;">
+        </form>
+    </div>
+    </div>
+  </nav>
+  <br><br><br>
+  <center>
+    <div class="container m-4" style="background-color: #F5D2D2; color: rgb(0, 0, 0); border-color: black; border-style: solid; border-radius: 20px; border-width: 4px; box-shadow: 10px 8px">
+        <div class="row text-center p-3 rounded">
+          <div class="col">
+            <img src="https://scontent.fcrk3-1.fna.fbcdn.net/v/t1.15752-9/542381641_4252984974925552_6451492340931590660_n.png?stp=dst-png_s480x480&_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=ldHgjM0yKDAQ7kNvwE42cYv&_nc_oc=Adnr3nIbrm9DNe5-PEjYAM1UPvXCv2NcrYuAW347kPG36iA9ltVaL3uG7HrspHcbjQE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fcrk3-1.fna&oh=03_Q7cD3QGP80Bg5v8KqL5_AnzI4snlWZBuH7jHivA9eRJKsr6nDg&oe=68EF5EF8" alt="catbread" id="cat">
+          </div>
+          <div class="col">
+            <br>
+            <h1>contact us .ᐟ</h1>
+            <br>
+            <p id="message" style="font-style: italic;"></p>
+          </div>
+          <div class="col">
+            <img src="https://scontent.fcrk3-1.fna.fbcdn.net/v/t1.15752-9/542381641_4252984974925552_6451492340931590660_n.png?stp=dst-png_s480x480&_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=ldHgjM0yKDAQ7kNvwE42cYv&_nc_oc=Adnr3nIbrm9DNe5-PEjYAM1UPvXCv2NcrYuAW347kPG36iA9ltVaL3uG7HrspHcbjQE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fcrk3-1.fna&oh=03_Q7cD3QGP80Bg5v8KqL5_AnzI4snlWZBuH7jHivA9eRJKsr6nDg&oe=68EF5EF8" alt="catbread" id="cat">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col" style="border-color: black; border-style: solid; border-radius: 15px; border-width: 4px; box-shadow: 10px 8px; margin: 20px; background-color: #F5D2D2;">
+            <h1 id="location"></h1>
+            <p id="locdetails"></p>
+          </div>
+          <div class="col" style="border-color: black; border-style: solid; border-radius: 15px; border-width: 4px; box-shadow: 10px 8px; margin: 20px; background-color: #F5D2D2;">
+            <h1 id="phone"></h1>
+            <p id="phondetails"></p>
+          </div>
+          <div class="col" style="border-color: black; border-style: solid; border-radius: 15px; border-width: 4px; box-shadow: 10px 8px; margin: 20px; background-color: #F5D2D2;">
+            <h1 id="email"></h1>
+            <p id="emaildetails"></p>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="border-color: black; border-style: solid; border-radius: 15px; border-width: 4px; box-shadow: 10px 8px; margin: 20px; background-color: #F5D2D2;">
+        <div class="col"> 
+            <h4>buisness hours</h4>
+            <p id="business_hours"></p>
+        </div>
+      </div>
+    </center> 
+    <script type="py" src="3.py"></script>
+</body>
+</html>
